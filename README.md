@@ -20,14 +20,95 @@ To implement univariate Linear Regression to fit a straight line using least squ
 ```
 /*
 Program to implement univariate Linear Regression to fit a straight line using least squares.
-Developed by: 
-RegisterNumber:  
+Developed by: K.Devi Jhansi
+RegisterNumber:  212221230045
+import matplotlib.pyplot as plt
+
+x=[5,6,3,2,6,7,1,2] 
+
+y=[2,3,6,5,8,3,5,8]
+
+plt.scatter(x,y)
+
+plt.plot(x,y)
+
+plt.show()
+
+import numpy as np
+
+import matplotlib.pyplot as plt
+
+#assignn input 
+
+x=np.array([0,1,2,3,4,5,6,7,8,9])
+
+y=np.array([1,3,2,5,7,8,8,9,10,12])
+
+#mean values of input
+
+x_mean=np.mean(x) 
+
+print(x_mean)
+
+y_mean=np.mean(y)
+
+print(y_mean)
+
+num=0
+
+denum=0
+
+for i in range(len(x)):
+
+  num+=(x[i]-x_mean)*(y[i]-y_mean)
+
+  denum+=(x[i]-x_mean)**2
+
+#find m
+
+m=num/denum
+
+#find b
+
+b=y_mean-m*x_mean
+
+print(m,b)
+
+#find y_pred
+
+y_pred=m*x+b
+
+print(y_pred)
+
+#plot graph
+
+plt.scatter(x,y)
+
+plt.plot(x,y_pred,color='green')
+
+plt.show()
+
+import numpy as np
+
+import pandas as pd
+
+dataset=pd.read_csv('Placement_Data.csv')
+
+print(dataset.iloc[3])
+
+print(dataset.iloc[0:4])
+
+print(dataset.iloc[:,1:3])
+
 */
 ```
 
 ## Output:
-![best fit line](sam.png)
-
+![output](output1.png)
+![output](output2.png)
+![output](output3.png)
+![output](output4.png)
+![output](output5.png)
 
 ## Result:
 Thus the univariate Linear Regression was implemented to fit a straight line using least squares using python programming.
