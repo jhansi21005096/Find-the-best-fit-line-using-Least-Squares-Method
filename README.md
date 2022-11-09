@@ -96,10 +96,10 @@ print(dataset.iloc[:,1:3])
 
 ## Output:
 
+![output](output1.png)
 ![output](output2.png)
 ![output](output3.png)
 ![output](output4.png)
-![output](output5.png)
 
 ## Result:
 Thus the univariate Linear Regression was implemented to fit a straight line using least squares using python programming.
